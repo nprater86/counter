@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: slategray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+    margin-top: 75px;
+}
+
+.content {
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.forms {
+    gap: 50px;
+}
+
+button{
+    padding: 25px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    position: relative;
+    color: white;
+    font-weight: bolder;
+}
+
+button:active{
+    box-shadow: none;
+    top: 5px;
+    left: 5px;
+}
+
+.add {
+    background-color: blueviolet;
+    border-radius: 25px;
+}
+
+.reset {
+    background-color: red;
+    border-radius: 25px;
+}
+
+#inputNum {
+    width: 145px;
+    height: 45px;
+    outline: none;
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+    border: 2px solid black;
+    border-right: none;
+    box-shadow: 5px 5px black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#go {
+    background-color: rebeccapurple;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}

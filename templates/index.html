@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='../static/css/style.css') }}">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content flex">
+            <h1>~* Counter *~</h1>
+            <h1>{{ session['count'] }}</h1>
+            <div class="forms flex">
+                <form action="/add_two" method="post">
+                    <button class="add">Add 2!</button>
+                </form>
+                <form action="/destroy_session" method="post">
+                    <button class="reset">Reset</button>
+                </form>
+            </div>
+            <form action="/add_x" method="post" class="flex" id="numInput">
+                <input type="number" name="x" id="inputNum">
+                <button type="submit" id="go">GO!</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='../static/js/script.js') }}"></script>
+</body>
+</html>
